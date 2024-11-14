@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://nayibdlh.github.io/desarrollo-web-I-crud",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/desarrollo-web-I-crud/",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "firebase": "^8.7.1",
